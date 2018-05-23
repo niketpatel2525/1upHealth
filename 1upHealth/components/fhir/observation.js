@@ -7,8 +7,7 @@ export default class FhirObservation extends React.Component {
             <h2 className='primarycolor' style={{display: 'inline-block'}}>
               {this.props.resource.code && this.props.resource.code.coding ? <span>{this.props.resource.code.coding[0].display} {this.props.resource.code.coding[0].code}</span> : this.props.resource.code.text}
             </h2>
-            &nbsp;&nbsp;&nbsp;
-            {/* <h3 style={{display: 'inline-block'}}>{this.props.resource.verificationStatus} & {this.props.resource.clinicalStatus}</h3> */}
+            &nbsp;&nbsp;&nbsp;           
             <table>
               <tbody>
                 {this.props.resource.referenceRange ? (
